@@ -20,7 +20,7 @@ body{
 }
 
 .subtitulo{
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -46,8 +46,9 @@ body{
 }
 
 .texto{
-  font-size: 1.1rem;
-  font-weight: regular;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding: 0;
   color: white;
@@ -63,21 +64,130 @@ body{
 }
 
 .Cinza{
-  background-color: #E5E5E5;
+  background-color: #D9D9D9;
   color: black;
   height: 40rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .tCalc{
-  font-size: 2rem;
+  font-size: 2.5rem;
   justify-content: center;
   font-weight: bold;
-  margin: 0;
+  margin: 5;
   padding: 0;
   color: black;
   text-align: center;
   line-height: 2.5rem;
+  width: 35%;
+}
+
+.caixona{
+  width: 50rem;
+  height: 30rem;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.c2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  height: 30rem;
+  background-color: gray;
+}
+
+.c2T{
+  font-size: 2.5rem;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 0.75rem;
+  padding: 0;
+  color: black;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.Qtd{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.c2Tz{
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0.5rem;
+  padding: 0;
+  color: black;
+}
+
+.res{
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  width: 10rem;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.c1{
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  height: 30rem;
+}
+
+.caixa1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #3B70F9;
+  width: 15rem;
+  height: 7.5rem;
+}
+
+.caixa2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #F52E2E;
+  width: 15rem;
+  height: 7.5rem;
+}
+
+.caixa3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #FCF42D;
+  width: 15rem;
+  height: 7.5rem;
+}
+
+.caixa4{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #2CA138;
+  width: 15rem;
+  height: 7.5rem;
 }

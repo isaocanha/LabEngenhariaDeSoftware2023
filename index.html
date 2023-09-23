@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>MarketCycle</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  </head>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MarketCycle</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
 <body>
   <div class="Verde">
     <h1 class="titulo">MarketCycle</h1>
@@ -16,21 +16,52 @@
     <div class="coluna">
       <h1 class="subtitulo">Quem Somos?</h1>
       <h2 class="texto">
-        Um grupo Preocupado com reciclagem, que busca incentivar a adesão das pessoas a reciclar mais todos os dias a partir de 
+        Um grupo preocupado com reciclagem, que busca incentivar a adesão das pessoas a reciclar mais todos os dias a partir de 
         parcerias com mercados que permitem com que os clientes ganhem descontos a partir da quantidade de itens que eles reciclam.
       </h2>
     </div>
     <div class="coluna">
       <h1 class="subtitulo">Quais os Mercados Participantes?</h1>
-      <button class="botao"><i class="fas fa-arrow-right"></i></button>
+      <button class="botao" id="b1"><i class="fas fa-arrow-right"></i></button>
     </div>
     <div class="coluna">
       <h1 class="subtitulo">Quer se Tonar Um Mercado Participante?</h1>
-      <button class="botao"><i class="fas fa-arrow-right"></i></button>
+      <button class="botao" id="b2"><i class="fas fa-arrow-right"></i></button>
     </div>
   </div>
   <div class="Cinza">
-    <h1 class="tCalc">Use Nossa Calculadora e Veja Quanto Você Pode Economizar em Nossos Mercados Parceiros!</h1>
+    <h1 class="tCalc">Use nossa calculadora e veja quanto você pode economizar em nossos mercados parceiros!</h1>
+    <div class="caixona">
+      <div class="c1">
+        <div class="caixa1">
+          <h1 class="c2Tz">Papel: </h1>
+          <input type="number" id="papel" class="res" placeholder="0" min="0" max="100000">
+          <h2 class="c2Tz">g</h2>
+        </div>
+        <div class="caixa2">
+          <h1 class="c2Tz">Plástico: </h1>
+          <input type="number" id="plastico" class="res" placeholder="0" min="0" max="100000">
+          <h2 class="c2Tz">g</h2>
+        </div>
+        <div class="caixa3">
+          <h1 class="c2Tz">Metal: </h1>
+          <input type="number" id="metal" class="res" placeholder="0" min="0" max="100000">
+          <h2 class="c2Tz">g</h2>
+        </div>
+        <div class="caixa4">
+          <h1 class="c2Tz">Vidro: </h1>
+          <input type="number" id="vidro" class="res" placeholder="0" min="0" max="100000">
+          <h2 class="c2Tz">g</h2>
+        </div>
+      </div>
+      <div class="c2">
+        <h1 class="c2T">Desconto Total</h1>
+        <div class="Qtd">
+          <h2 class="c2Tz">R$</h2>
+          <div id="resultado" class="res"></div>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
