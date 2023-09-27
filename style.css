@@ -2,6 +2,7 @@ body{
   margin: 0;
 }
 .Verde {
+  position: relative;
   background-color: #006400;
   color: white;
   height: 20rem;
@@ -66,10 +67,9 @@ body{
 .Cinza{
   background-color: #D9D9D9;
   color: black;
-  height: 40rem;
+  height: 50rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -77,11 +77,11 @@ body{
   font-size: 2.5rem;
   justify-content: center;
   font-weight: bold;
-  margin: 5;
+  margin-bottom: 5;
   padding: 0;
   color: black;
   text-align: center;
-  line-height: 2.5rem;
+  line-height: 3rem;
   width: 35%;
 }
 
@@ -190,4 +190,85 @@ body{
   background-color: #2CA138;
   width: 15rem;
   height: 7.5rem;
+}
+
+.Cinza2{
+  background-color: #D9D9D9;
+  color: black;
+  height: 43rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabela{
+  width: 50rem;
+  height: 30rem;
+  border: 1px solid black;
+}
+
+.tabela th{
+  border: 1px solid black;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #cccd;
+}
+
+.tabela td{
+  border: 1px solid black;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: white;
+}
+
+.home{
+  position: absolute;
+  font-size: 3.5rem;
+  top: 0px;
+  left: 10px;
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+}
+
+.Cinza3{
+  background-color: #D9D9D9;
+  color: black;
+  height: 43rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitulo2{
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 10;
+  padding: 0;
+  color: black;
+  text-align: center;
+  width: 50%;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.entrar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.textinho{
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-style: normal;
+  margin: 0.5rem;
+  color: black;
 }
