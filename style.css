@@ -260,6 +260,7 @@ body{
 
 .entrar{
   display: flex;
+  margin-top: 0.5rem;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
@@ -271,4 +272,17 @@ body{
   font-style: normal;
   margin: 0.5rem;
   color: black;
+}
+
+.submeter{
+  width: 21.25rem;
+  height: 3rem;
+  fill: #D9D9D9;
+  stroke-width: 1px;
+  stroke: #000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 4rem;
 }
