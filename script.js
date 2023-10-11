@@ -6,9 +6,9 @@ document.getElementById('b2').addEventListener('click', function() {
   window.location.href = 'index3.html';
 });
 
-const valorPapel = 0.01;
-const valorPlastico = 0.02;
-const valorMetal = 0.03;
+const valorPapel = 0.02;
+const valorPlastico = 0.08;
+const valorMetal = 0.10;
 const valorVidro = 0.04;
 
 function calcularDesconto() {

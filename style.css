@@ -1,6 +1,86 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500;700&family=Titillium+Web&display=swap');
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body{
+  background-color: #D9D9D9;
+}
+
+header{
+  background-color: #1E1C21;
+  height: 91px;
+}
+
+.container-grid {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.cabecalho {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  width: 500px;
+  display: flex;
+  justify-content:space-between;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto";
+}
+
+.banner {
+  height: 602px;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-1{
+  background-image: url(img/banner1.png);
+}
+
+.posicionamento-banner{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.conteudo-banner{
+  width: 497px;
+  height: 237px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conteudo-banner h1 {
+  color: black;
+  font-family: "Titillium Web";
+  font-size: 80px;
+}
+
+.conteudo-banner p{
+  color: black;
+  font-family: "Roboto";
+  font-size: 25px;
+  text-align: center;
+}
+
 .Verde {
   position: relative;
   background-color: #006400;
@@ -65,7 +145,6 @@ body{
 }
 
 .Cinza{
-  background-color: #D9D9D9;
   color: black;
   height: 50rem;
   display: flex;
@@ -193,7 +272,6 @@ body{
 }
 
 .Cinza2{
-  background-color: #D9D9D9;
   color: black;
   height: 43rem;
   display: flex;
@@ -233,7 +311,6 @@ body{
 }
 
 .Cinza3{
-  background-color: #D9D9D9;
   color: black;
   height: 43rem;
   display: flex;
@@ -285,4 +362,45 @@ body{
   font-weight: 200;
   font-style: normal;
   margin-top: 4rem;
+}
+
+@media screen and (max-width: 1200px){
+  .container-grid{
+      width: 85vw;
+  }
+
+  .banner h1{
+      color:#FFD700
+  }
+}
+
+@media screen and (max-width: 1000px){
+  #barras{
+      display: inline-block;
+  }
+  .menu{
+      display: none;
+      position: absolute;
+      top: 91px;
+      right: 0px;
+
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      background-color: #1E1C21;
+      height: 400px;
+  }
+
+  .menu a{
+      font-size: 20px;
+  }
+
+  .menu-ativo{
+      display: flex;
+  }
+
+  .cabecalho{
+      position: relative;
+  }
 }
