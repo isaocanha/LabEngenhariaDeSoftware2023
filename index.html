@@ -27,61 +27,90 @@
         </div>
     </div>
   </section>
-  <div class="Verde">
-    <h1 class="titulo">MarketCycle</h1>
-    <h2 class="subtitulo">O maior grupo de reciclagem com parcerias de mercados do Brasil</h2>
-  </div>
-  <div class="Azul">
-    <div class="coluna">
-      <h1 class="subtitulo">Quem Somos?</h1>
-      <h2 class="texto">
-        Um grupo preocupado com reciclagem, que busca incentivar a adesão das pessoas a reciclar mais todos os dias a partir de 
-        parcerias com mercados que permitem com que os clientes ganhem descontos a partir da quantidade de itens que eles reciclam.
-      </h2>
+  <section class="secao-sobre">
+    <div class="container conteudo-sobre">
+        <div class="texto-sobre">
+            <h2>Quem Somos?</h2>
+            <p>Um grupo preocupado com reciclagem, que busca incentivar a adesão das pessoas a reciclar mais todos os dias a partir de 
+              parcerias com mercados que permitem com que os clientes ganhem descontos a partir da quantidade de itens que eles reciclam.</p>
+        </div>
     </div>
-    <div class="coluna">
-      <h1 class="subtitulo">Quais os Mercados Participantes?</h1>
-      <button class="botao" id="b1"><i class="fas fa-arrow-right"></i></button>
-    </div>
-    <div class="coluna">
-      <h1 class="subtitulo">Quer se Tonar Um Mercado Participante?</h1>
-      <button class="botao" id="b2"><i class="fas fa-arrow-right"></i></button>
-    </div>
-  </div>
-  <div class="Cinza">
-    <h1 class="tCalc">Use nossa calculadora e veja quanto você pode economizar em nossos mercados parceiros!</h1>
-    <div class="caixona">
-      <div class="c1">
-        <div class="caixa1">
-          <h1 class="c2Tz">Papel: </h1>
-          <input type="number" id="papel" class="res" placeholder="0" min="0" max="100000">
-          <h2 class="c2Tz">g</h2>
-        </div>
-        <div class="caixa2">
-          <h1 class="c2Tz">Plástico: </h1>
-          <input type="number" id="plastico" class="res" placeholder="0" min="0" max="100000">
-          <h2 class="c2Tz">g</h2>
-        </div>
-        <div class="caixa3">
-          <h1 class="c2Tz">Metal: </h1>
-          <input type="number" id="metal" class="res" placeholder="0" min="0" max="100000">
-          <h2 class="c2Tz">g</h2>
-        </div>
-        <div class="caixa4">
-          <h1 class="c2Tz">Vidro: </h1>
-          <input type="number" id="vidro" class="res" placeholder="0" min="0" max="100000">
-          <h2 class="c2Tz">g</h2>
-        </div>
+</section>
+<div class="Cinza">
+  <h1 class="tCalc">Use nossa calculadora e veja quanto você pode economizar em nossos mercados parceiros!</h1>
+  <div class="caixona">
+    <div class="c1">
+      <div class="caixa1">
+        <h1 class="c2Tz">Papel: </h1>
+        <input type="number" id="papel" class="res" placeholder="0" min="0" max="100000">
+        <h2 class="c2Tz">g</h2>
       </div>
-      <div class="c2">
-        <h1 class="c2T">Desconto Total</h1>
-        <div class="Qtd">
-          <h2 class="c2Tz">R$</h2>
-          <div id="resultado" class="res"></div>
-        </div>
+      <div class="caixa2">
+        <h1 class="c2Tz">Plástico: </h1>
+        <input type="number" id="plastico" class="res" placeholder="0" min="0" max="100000">
+        <h2 class="c2Tz">g</h2>
+      </div>
+      <div class="caixa3">
+        <h1 class="c2Tz">Metal: </h1>
+        <input type="number" id="metal" class="res" placeholder="0" min="0" max="100000">
+        <h2 class="c2Tz">g</h2>
+      </div>
+      <div class="caixa4">
+        <h1 class="c2Tz">Vidro: </h1>
+        <input type="number" id="vidro" class="res" placeholder="0" min="0" max="100000">
+        <h2 class="c2Tz">g</h2>
+      </div>
+    </div>
+    <div class="c2">
+      <h1 class="c2T">Desconto Total</h1>
+      <div class="Qtd">
+        <h2 class="c2Tz">R$</h2>
+        <div id="resultado" class="res"></div>
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
+</div>
+</main>
+<footer>
+    <div class="container rodape">
+        <div class="links-footer">
+            <div>
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a href="#">Regras de utilização</a></li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Páginas</h2>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Campeonatos</a></li>
+                    <li><a href="#">Resultados</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Login/Cadastro</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sociais">
+            <p>Cadastre-se para saber mais!</p>
+
+            <form action="">
+                <input id="campo-email" type="email" placeholder="E-mail" required>
+                <button onclick="cadastrarNewsletter()">Cadastrar</button>
+            </form>
+
+            <div class="siga-nos">
+                <h2>Siga-nos em:</h2>
+                <a href="#"><img src="img/logo-instagram.png" alt="Logo do Instagram"></a>
+                <a href="#"><img src="img/logo-facebook.png" alt="Logo do Facebook"></a>
+                <a href="#"><img src="img/logo-yt.png" alt="Logo do Youtube"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
