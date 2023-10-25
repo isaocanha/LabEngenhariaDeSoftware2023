@@ -1,11 +1,3 @@
-document.getElementById('b1').addEventListener('click', function() {
-  window.location.href = 'index2.html';
-});
-
-document.getElementById('b2').addEventListener('click', function() {
-  window.location.href = 'index3.html';
-});
-
 const valorPapel = 0.02;
 const valorPlastico = 0.08;
 const valorMetal = 0.10;
