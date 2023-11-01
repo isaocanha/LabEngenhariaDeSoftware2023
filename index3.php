@@ -1,3 +1,34 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "bancogeral";
+
+    // Conecta-se ao banco de dados
+    $conn = new mysqli($servername, $username, $password, $database);
+
+    // Verifica a conexão
+    if ($conn->connect_error) {
+        die("Erro de conexão: " . $conn->connect_error);
+    }
+
+    // Recebe os dados do formulário
+    $mercado = $_POST['mercados'];
+    $cidade = $_POST['Localização'];
+    $endereco = $_POST['Endereço'];
+
+    $sql = "INSERT INTO mercados (mercados, Localização, Endereço) VALUES ('$mercado', '$cidade', '$endereco')";
+
+    if ($conn->query($sql) === TRUE) {
+    }
+   else {
+      }
+    $conn->close();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -28,31 +59,33 @@
   <div class="Cinza3">
     <h1 class="subtitulo2">Informe seus dados abaixo e entraremos em contato o quanto antes:</h1>
     <div class="inputs">
-      <div class="entrar">
-        <h1 class="textinho">Nome: </h1>
-        <input type="text" id="nome" class="res">
-      </div>
-      <div class="entrar">
-        <h1 class="textinho">Email: </h1>
-        <input type="text" id="email" class="res">
-      </div>
-      <div class="entrar">
-        <h1 class="textinho">Telefone: </h1>
-        <input type="text" id="telefone" class="res">
-      </div>
-      <div class="entrar">
-        <h1 class="textinho">Mercado: </h1>
-        <input type="text" id="mercado" class="res">
-      </div>
-      <div class="entrar">
-        <h1 class="textinho">Cidade: </h1>
-        <input type="text" id="cidade" class="res">
-      </div>
-      <div class="entrar">
-        <h1 class="textinho">Endereço: </h1>
-        <input type="text" id="endereco" class="res">
-      </div>
-      <button class="submeter" id="bs">Submeter</button>
+      <form action="index3.php" method="post">
+        <div class="entrar">
+          <h1 class="textinho">Nome: </h1>
+          <input type="text" name="nome" class="res">
+        </div>
+        <div class="entrar">
+          <h1 class="textinho">Email: </h1>
+          <input type="text" name="email" class="res">
+        </div>
+        <div class="entrar">
+          <h1 class="textinho">Telefone: </h1>
+          <input type="text" name="telefone" class="res">
+        </div>
+        <div class="entrar">
+          <h1 class="textinho">Mercado: </h1>
+          <input type="text" name="mercados" class="res">
+        </div>
+        <div class="entrar">
+          <h1 class="textinho">Cidade: </h1>
+          <input type="text" name="Localização" class="res">
+        </div>
+        <div class="entrar">
+          <h1 class="textinho">Endereço: </h1>
+          <input type="text" name="Endereço" class="res">
+        </div>
+        <button class="submeter" id="bs">Submeter</button>
+      </form>
     </div>
   </div>
   <footer>

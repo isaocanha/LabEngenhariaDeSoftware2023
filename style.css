@@ -471,6 +471,13 @@ footer {
   align-items: flex-end;
 }
 
+.inputs form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .entrar{
   display: flex;
   margin-top: 0.5rem;
